@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="/shared/style/main.css" rel="stylesheet" />
+        <link href="style/crea_eval.css" rel="stylesheet" />
+        <script type="module" src="scripts/crea_eval.js" async></script>
+        <script type="module" src="/shared/patterns/footer.js" defer></script>
+        <script type="module" src="/shared/patterns/header.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Création d'évaluation</title>
+    </head>
+    <body>
+        <header></header>
+
+        <h1>Création d'une évaluation</h1>
+
+        <div id="general_info">
+            <label>Nom de l'évaluation : </label>
+            <input type="text" id="evalName" placeholder="Nom de l'évaluation" />
+            <p>Nombre de questions : <span id="nbQuestions">0</span></p>
+            <p>Total de points : <span id="nbPoints">0</span></p>
+            <button id="save">Sauvegarder</button>
+        </div>
+
+        <div id="questions">
+            <h2>Questions</h2>
+            <div id="questionsList"></div>
+            <div id="addButtons">
+                <button id="addQuestion">Ajouter une question</button>
+                <div id="addType" hidden>
+                    <button id="addConjug">Conjugaison</button>
+                    <button id="addTrad">Traduction</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

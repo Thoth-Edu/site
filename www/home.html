@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Accueil</title>
+        <link href="/shared/style/main.css" rel="stylesheet" />
+        <link href="style/home.css" rel="stylesheet" />
+        <script type="module" src="/shared/patterns/footer.js" defer></script>
+        <script type="module" src="scripts/home.js" async></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div>
+            <button id="connect">Se connecter</button>
+        </div>
+
+        <div>
+            <h1>ThothEdu</h1>
+        </div>
+
+        <div class="access">
+            <p>Accéder à une évaluation</p>
+            <input
+                type="text"
+                title="Accéder à un contrôle"
+                placeholder="Entrez un identifiant"
+                id="idInputField"
+                autofocus
+            />
+            <button id="validate">Valider</button>
+            <br />
+            <label id="errorConnecting"></label>
+        </div>
+    </body>
+</html>
